@@ -16,6 +16,8 @@
 4. 磁场
 	[![](Chinese/gifs/MagneticFieldModel.gif)](Chinese/videos/MagneticFieldModel.mp4)
 
+5. 引力场
+	[![](Chinese/gifs/GravitationalFieldModel.gif)](Chinese/videos/GravitationalFieldModel.mp4)
 
 ## English
 
@@ -30,3 +32,6 @@
 	
 4. Magnetic field
 	[![](English/gifs/MagneticFieldModel.gif)](English/videos/MagneticFieldModel.mp4)
+
+5. Gravitational field
+	[![](English/gifs/GravitationalFieldModel.gif)](English/videos/GravitationalFieldModel.mp4)
