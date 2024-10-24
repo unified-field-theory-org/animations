@@ -13,6 +13,8 @@
 3. 电场
 	[![](Chinese/gifs/ElectricFieldModel.gif)](Chinese/videos/ElectricFieldModel.mp4)
 
+4. 磁场
+	[![](Chinese/gifs/MagneticFieldModel.gif)](Chinese/videos/MagneticFieldModel.mp4)
 
 
 ## English
@@ -25,3 +27,6 @@
 
 3. Electric field
 	[![](English/gifs/ElectricFieldModel.gif)](English/videos/ElectricFieldModel.mp4)
+	
+4. Magnetic field
+	[![](English/gifs/MagneticFieldModel.gif)](English/videos/MagneticFieldModel.mp4)
