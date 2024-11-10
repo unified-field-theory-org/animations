@@ -1,37 +1,91 @@
 # Animations
 
+Model animation related to unified field theory, made with [3b1b/manim](https://github.com/3b1b/manim).
+
+> [!WARNING]  
+> This is still a work in progress, and there's still part of the script that hasn't been finished yet.
+
+## Getting Started
+
+### Download
+
+```shell
+git clone https://github.com/unified-field-theory-org/animations.git ~/project/animations
+
+cd ~/project/animations
+```
+
+This project uses [3b1b/manim](https://github.com/3b1b/manim) as a submodule. Therefore it needs to be initialized first.
+
+```shell
+# Initialize manim
+git submodule init
+git submodule update
+```
+
+### Create virtual env
+
+```shell
+# create virtual env
+conda create -n uft-animations python=3.10
+conda activate uft-animations
+```
 
 
-## Chinese
 
-1. 时空同一化方程
-	[![](Chinese/gifs/SpaceTimeIsomorphismEquation.gif)](Chinese/videos/SpaceTimeIsomorphismEquation.mp4)
+### Build manim from source
 
-2. 统一场论
-	[![](Chinese/gifs/UnifiedFieldTheoryModel.gif)](Chinese/videos/UnifiedFieldTheoryModel.mp4)
+```shell
+pip install -e ./libs/manim
+```
 
-3. 电场
-	[![](Chinese/gifs/ElectricFieldModel.gif)](Chinese/videos/ElectricFieldModel.mp4)
+> [!NOTE] 
+> If you got "ModuleNotFoundError: No module named 'mapbox_earcut'" error, you also need to install mapbox_earcut first
+>
+> ```shell
+> pip install mapbox-earcut
+> ```
+>
+> Then, re-run
+>
+> ```shell
+> pip install -e ./libs/manim
+> ```
 
-4. 磁场
-	[![](Chinese/gifs/MagneticFieldModel.gif)](Chinese/videos/MagneticFieldModel.mp4)
+### Verify installation
 
-5. 引力场
-	[![](Chinese/gifs/GravitationalFieldModel.gif)](Chinese/videos/GravitationalFieldModel.mp4)
+```shell
+which manimgl 
+```
 
-## English
+If the output as follows
 
-1. Space time Isomorphism equation
-	[![](English/gifs/SpaceTimeIsomorphismEquation.gif)](English/videos/SpaceTimeIsomorphismEquation.mp4)
+```shell
+/opt/anaconda3/envs/uft-animations/bin/manimgl
+```
 
-2. Unified field theory
-	[![](English/gifs/UnifiedFieldTheoryModel.gif)](English/videos/UnifiedFieldTheoryModel.mp4)
+Then manim is installed successfully
 
-3. Electric field
-	[![](English/gifs/ElectricFieldModel.gif)](English/videos/ElectricFieldModel.mp4)
-	
-4. Magnetic field
-	[![](English/gifs/MagneticFieldModel.gif)](English/videos/MagneticFieldModel.mp4)
+### Extra
 
-5. Gravitational field
-	[![](English/gifs/GravitationalFieldModel.gif)](English/videos/GravitationalFieldModel.mp4)
+You also need to install `ffmpeg` and `mactex`.
+
+```shell
+brew install ffmpeg mactex
+```
+
+
+
+## Play Animations
+
+```shell
+python src/animation.py -p 01
+```
+
+If everything works, then you will be able to see the animation play.
+
+
+
+## Generated Animations
+
+See [generated animations](./GENERATED.md)

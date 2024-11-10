@@ -1,1 +1,15 @@
+# macOS file
 .DS_Store
+
+# mania build
+gen/*/*
+
+# python
+__pycache__
+
+#IDE
+.idea
+.vscode
+
+# TMP
+scr/script/*.py
